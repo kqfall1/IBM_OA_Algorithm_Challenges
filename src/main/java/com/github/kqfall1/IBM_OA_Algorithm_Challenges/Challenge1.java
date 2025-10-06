@@ -20,9 +20,7 @@ public class Challenge1
 	{
 		int balance = 0;
 		int[] descendingTransactions = new int[transactions.length];
-		int descendingTransactionsIndex = 0;
 		int transactionCount = 0;
-		int transactionIndex;
 
 		Arrays.sort(transactions);
 
