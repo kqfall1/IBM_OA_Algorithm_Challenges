@@ -3,7 +3,6 @@
 package com.github.kqfall1.IBM_OA_Algorithm_Challenges;
 
 import com.github.kqfall1.kqfall1JavaUtils.CollectionConverter;
-
 import java.util.Arrays;
 
 public class Challenge1
