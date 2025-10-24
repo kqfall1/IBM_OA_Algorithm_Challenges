@@ -49,6 +49,6 @@ public class Challenge2
 			capacitySubset.add(potentialCapacityValue);
 		}
 
-		return CollectionConverter.toIntArr(capacitySubset.toArray()); //CollectionConverter.toIntArr(capacitySubset);
+		return CollectionConverter.toIntArr(capacitySubset.toArray()); 
 	}
 }
