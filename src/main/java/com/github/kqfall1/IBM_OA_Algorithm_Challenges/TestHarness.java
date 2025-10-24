@@ -2,7 +2,8 @@
 
 package com.github.kqfall1.IBM_OA_Algorithm_Challenges;
 
-import com.github.kqfall1.kqfall1JavaUtils.CollectionPrinter;
+import com.github.kqfall1.utils.CollectionConverter;
+import com.github.kqfall1.utils.CollectionPrinter;
 import java.util.Arrays;
 
 public class TestHarness
@@ -12,13 +13,27 @@ public class TestHarness
 
 	public static void main(String[] args)
 	{
-		CollectionPrinter.print(transactions, "Transactions array");
+		var printer = new CollectionPrinter(System.out);
+
+		printer.print(
+			CollectionConverter.toIntegerArr(transactions),
+			"Transactions array"
+		);
+
 		System.out.printf("The maximum number of processable transactions in the array" +
 		" for the balance to stay positive is %d.%n", Challenge1.getMaxTransactions(transactions));
 
-		CollectionPrinter.print(capacities, "Capacities array");
+		printer.print(
+			CollectionConverter.toIntegerArr(capacities),
+			"Capacities array"
+		);
+
 		capacities = Challenge2.getMaxUniqueCapacities(capacities);
 		Arrays.sort(capacities);
-		CollectionPrinter.print(capacities, "The largest possible subset given the capacities");
+
+		printer.print(
+			CollectionConverter.toIntegerArr(capacities),
+			"The largest possible subset given the capacities"
+		);
 	}
 }

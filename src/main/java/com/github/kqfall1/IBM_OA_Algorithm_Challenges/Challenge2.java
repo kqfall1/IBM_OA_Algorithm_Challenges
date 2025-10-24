@@ -2,7 +2,7 @@
 
 package com.github.kqfall1.IBM_OA_Algorithm_Challenges;
 
-import com.github.kqfall1.kqfall1JavaUtils.CollectionConverter;
+import com.github.kqfall1.utils.CollectionConverter;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -49,6 +49,6 @@ public class Challenge2
 			capacitySubset.add(potentialCapacityValue);
 		}
 
-		return CollectionConverter.toIntArr(capacitySubset);
+		return CollectionConverter.toIntArr(capacitySubset.toArray()); //CollectionConverter.toIntArr(capacitySubset);
 	}
 }

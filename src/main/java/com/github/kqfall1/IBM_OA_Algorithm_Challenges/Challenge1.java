@@ -2,7 +2,7 @@
 
 package com.github.kqfall1.IBM_OA_Algorithm_Challenges;
 
-import com.github.kqfall1.kqfall1JavaUtils.CollectionConverter;
+import static com.github.kqfall1.utils.CollectionConverter.*;
 import java.util.Arrays;
 
 public class Challenge1
@@ -18,12 +18,11 @@ public class Challenge1
 	static int getMaxTransactions(int[] transactions)
 	{
 		int balance = 0;
-		int[] descendingTransactions = new int[transactions.length];
+		int[] descendingTransactions;
 		int transactionCount = 0;
 
 		Arrays.sort(transactions);
-
-		descendingTransactions = CollectionConverter.reverse(transactions);
+		descendingTransactions = toIntArr(reverse(toIntegerArr(transactions)));
 
 		for (int transaction : descendingTransactions)
 		{
