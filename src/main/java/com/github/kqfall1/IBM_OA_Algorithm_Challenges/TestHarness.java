@@ -2,8 +2,8 @@
 
 package com.github.kqfall1.IBM_OA_Algorithm_Challenges;
 
-import com.github.kqfall1.utils.CollectionConverter;
-import com.github.kqfall1.utils.CollectionPrinter;
+import com.github.kqfall1.java.utils.CollectionConverter;
+import com.github.kqfall1.java.utils.CollectionPrinter;
 import java.util.Arrays;
 
 public class TestHarness

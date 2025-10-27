@@ -2,18 +2,16 @@
 
 package com.github.kqfall1.IBM_OA_Algorithm_Challenges;
 
-import static com.github.kqfall1.utils.CollectionConverter.*;
+import static com.github.kqfall1.java.utils.CollectionConverter.*;
 import java.util.Arrays;
 
 public class Challenge1
 {
-	/*
-		Given an array of integers representing transactions (that may be gains or losses), return
-		the maximum number of transactions that can be totalled to represent the balance of the
-		transaction array with the balance remaining positive.
-	 */
+	/* Given an array of integers representing transactions (that may be gains or losses), return
+	the maximum number of transactions that can be totalled to represent the balance of the
+	transaction array with the balance remaining positive.
 
-	/* A "greedy" addition algorithm that yields the maximum number of transactions without the
+	A "greedy" addition algorithm that yields the maximum number of transactions without the
 	balance ever becoming non-positive: */
 	static int getMaxTransactions(int[] transactions)
 	{
